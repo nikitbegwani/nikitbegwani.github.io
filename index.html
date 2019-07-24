@@ -21,12 +21,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href=//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet"  href="/lightslider.css"/>
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Academic">
   <link rel="feed" href="/index.xml" type="application/rss+xml" title="Academic">
+
   
  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/lightslider.js"></script>
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
@@ -49,6 +49,17 @@
   <meta property="og:updated_time" content="2017-10-15T00:00:00&#43;05:30">
 
   <title>Nikit Begwani</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../src/js/lightslider.js"></script> 
+    <script>
+       $(document).ready(function() {
+      $("#lightSlider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+    });
+    </script>
 
 </head>
 
@@ -780,11 +791,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
     <script src="/js/search.js"></script>
     
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("#lightSlider").lightSlider(); 
-  });
-</script>
+
     
 
   </body>

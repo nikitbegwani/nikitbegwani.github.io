@@ -24,8 +24,10 @@
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Academic">
   <link rel="feed" href="/index.xml" type="application/rss+xml" title="Academic">
   
- <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
- 
+ <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
@@ -46,8 +48,6 @@
   <meta property="og:locale" content="en-us">
   
   <meta property="og:updated_time" content="2017-10-15T00:00:00&#43;05:30">
-  script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/lightslider.js"></script>
 
   <title>Nikit Begwani</title>
 
@@ -125,17 +125,7 @@
   </div>
 </nav>
 
-<ul id="lightSlider">
-  <li>
-      <h3>First Slide</h3>
-      <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
-  </li>
-  <li>
-      <h3>Second Slide</h3>
-      <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
-  </li>
-  ...
-</ul>
+
 
 <span id="homepage" style="display: none"></span>
   
@@ -264,9 +254,9 @@
             <tr>
                 <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">MCDS, LTI <br>CMU<br>2019 - </td>
                 <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">Research Engineer<br>Microsoft<br>2017 - </td>
-                <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">B.Tech, Computer Science<br>IIT Guwahati<br>2013 - 2017</td>
+                <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">B.Tech in Computer Science<br>IIT Guwahati<br>2013 - 2017</td>
                 <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">Winter School<br>Gifu University<br>2015</td>
-                <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">SDE Intern<br>MAQ Software<br>2015</td>
+                <td align="center" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">Software Engineering Intern<br>MAQ Software<br>2015</td>
                 
                 
                 
@@ -648,7 +638,11 @@
   </section>
   
 
-
+<div class="your-class">
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
 
 <div class="container">
   <footer class="site-footer">
@@ -783,14 +777,16 @@
     <script src="/js/search.js"></script>
     
 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
     
+    $(document).ready(function(){
+  $('.your-class').slick({
+    setting-name: setting-value
+  });
+});
     
 
   </body>
 </html>
-    
-    <script type="text/javascript">
-  $(document).ready(function() {
-    $("#lightSlider").lightSlider(); 
-  });
-</script>
